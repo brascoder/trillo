@@ -13,6 +13,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= render "shared/header" %>
+      <div class="content">
+        <nav class="sidebar">
+          Navigation
+        </nav>
+        <main class="hotel-view">
+          <%= yield %>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
